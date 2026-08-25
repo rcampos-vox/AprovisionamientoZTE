@@ -106,7 +106,7 @@ exit<br><br>
 service voip gemport 2 vlan 141<br>
 voip protocol sip<br>
 voip-ip mode dhcp vlan-profile vlan141 host 2<br>
-sip-service pots_0/<span class="variable-highlight">${d.numpots}</span> profile denwaSIP userid 54<span class="variable-highlight">${d.caracteristica}</span><span class="variable-highlight">${d.telefono}</span> username 54<span class="variable-highlight">${d.caracteristica}</span><span class="variable-highlight">${d.telefono}</span> password <span class="variable-highlight">${d.cuentaFormateada}</span><span class="variable-highlight">${d.telefono}</span> media-profile wiltelMEDIA<br>
+sip-service pots_0/<span class="variable-highlight">${d.numpots}</span> profile wiltelvoip userid 54<span class="variable-highlight">${d.caracteristica}</span><span class="variable-highlight">${d.telefono}</span> username 54<span class="variable-highlight">${d.caracteristica}</span><span class="variable-highlight">${d.telefono}</span> password <span class="variable-highlight">${d.cuentaFormateada}</span><span class="variable-highlight">${d.telefono}</span> media-profile wiltelMEDIA<br>
 exit<br>
 exit<br>`,
 				copiarComando: (d) => `configure terminal\n
@@ -358,7 +358,7 @@ exit\n`,
 				comando: (d) => `configure terminal<br>
 pon-onu-mng gpon-onu_1/<span class="variable-highlight">${d.placa}</span>/<span class="variable-highlight">${d.puerto}</span>:<span class="variable-highlight">${d.puertoLogico}</span><br>
 no sip-service pots_0/<span class="variable-highlight">${d.numpots}</span><br>
-sip-service pots_0/<span class="variable-highlight">${d.numpots}</span> profile denwaSIP userid 54<span class="variable-highlight">${d.caracteristica}</span><span class="variable-highlight">${d.telefono}</span> username 54<span class="variable-highlight">${d.caracteristica}</span><span class="variable-highlight">${d.telefono}</span> password <span class="variable-highlight">${d.cuentaFormateada}</span><span class="variable-highlight">${d.telefono}</span> media-profile wiltelMEDIA<br>
+sip-service pots_0/<span class="variable-highlight">${d.numpots}</span> profile wiltelvoip userid 54<span class="variable-highlight">${d.caracteristica}</span><span class="variable-highlight">${d.telefono}</span> username 54<span class="variable-highlight">${d.caracteristica}</span><span class="variable-highlight">${d.telefono}</span> password <span class="variable-highlight">${d.cuentaFormateada}</span><span class="variable-highlight">${d.telefono}</span> media-profile wiltelMEDIA<br>
 exit<br>
 exit<br>`,
 				copiarComando: (d) => `configure terminal\n
